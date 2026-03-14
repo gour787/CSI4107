@@ -18,4 +18,4 @@ with open(in_path, "r", encoding="utf-8") as f_in, open(out_path, "w", encoding=
         qid, docid, rel = row[0].strip(), row[1].strip(), row[2].strip()
         f_out.write(f"{qid} 0 {docid} {rel}\n")
 
-print(f"✅ qrels written to {out_path}")
+print(f"[SUCCESS] qrels written to {out_path}")

@@ -7,7 +7,6 @@ TOKEN_RE = re.compile(r"[a-z]+")
 def load_stopwords(path: str) -> Set[str]:
     """
     Expect one stopword per line in a .txt file.
-    (If your provided stopwords are HTML, convert them once and document it.)
     """
     sw = set()
     with open(path, "r", encoding="utf-8") as f:
