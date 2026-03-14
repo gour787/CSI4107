@@ -80,8 +80,7 @@ def safe_int_qid(qid: str) -> int:
 
 
 def main():
-    # Your base folder
-    BASE = r"C:\Users\smoha\OneDrive - University of Ottawa\Desktop\A1"
+    BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     DATA_DIR = os.path.join(BASE, "data")
     OUT_DIR = os.path.join(BASE, "output")
 
